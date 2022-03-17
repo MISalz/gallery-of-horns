@@ -2,19 +2,24 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 
-class App extends React.Component {
+class Main extends React.Component {
   render() {
+    let hb = [];
+    this.props.data.forEach((beast, index) => {
+      hb.push(
+        <HornedBeast
+        imageUrl={beast.image_Url}
+          title={beast.title}
+          description={beast.description}
+          key={index}
+        />
+      )
+    })
     return (
       <main>
-        <HornedBeast name="HB1"
-        title =''
-        imageUrl=''
-         description ='' />
-        <HornedBeast name="HB2" />
-        <HornedBeast name="HB3"/>
-        <HornedBeast name="HB4"/>
+        {hb}
       </main>
     );
   }
 }
-export default App;
+export default Main;
