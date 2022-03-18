@@ -1,0 +1,32 @@
+article{
+  border:1px solid black;
+  padding: 1vw;
+margin-bottom: 1vw;
+width: 15%;
+}
+
+article img{
+  width: 100%;
+}
+
+article p{
+  font-size: 10px;
+  margin: auto;
+  display: inline-block;
+  margin-bottom: 1px;
+}
+
+article p:last-of-type{
+  padding-left: 1px;
+  cursor: pointer;
+}
+
+article p:last-of-type:hover{
+  color:blueviolet;
+}
+
+.hb-button{
+  margin: .5rem 1vw;
+
+
+}

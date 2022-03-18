@@ -1,0 +1,9 @@
+h1{
+  font-size: 5vw;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
