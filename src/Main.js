@@ -9,7 +9,7 @@ class Main extends React.Component {
     let hb = [];
     this.props.data.forEach((beast, index) => {
       hb.push(
-        <HornedBeast imageUrl={beast.image_url} title={beast.title} description={beast.description} key={index}
+        <HornedBeast image_url={beast.image_url} title={beast.title} description={beast.description} key={index}
         />
       )
     })
