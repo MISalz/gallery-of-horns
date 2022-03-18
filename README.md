@@ -91,7 +91,7 @@ React - https://reactjs.org/docs/getting-started.html
 ### Lab03
 
 
-**Number and name of feature:**   
+**Number and name of feature:**  feature2.1 
 **Estimate of time needed to complete:**     
 **Start time:**   
 **Finish time:**   
@@ -109,18 +109,19 @@ React - https://reactjs.org/docs/getting-started.html
 4. Create a SelectedBeast component and include it in your App
 
 5. Use the state in the App to render an individual beast in a Modal in the SelectedBeast component using React Bootstrap
+
 6. Create an input element to allow users to search for an image. It is up to you to decide if the user should be able to search by title, keyword, or both.
+
 7. Write a regular expression pattern to create a fuzzy search so that the results are narrowed down and displayed every time the user enters or removes a character from the input.
-8. 
-9. 
-10. 
 
 </ul>
 
 **Notes:** 
 
 **Links:** 
+https://react-bootstrap.github.io/
 
+https://emojifinder.com/
 ---
 
 ### Lab04
@@ -134,16 +135,11 @@ React - https://reactjs.org/docs/getting-started.html
 
 **Lab:**
 <ul>
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
+
+1. • Using the Form component of react-bootstrap, build a drop down menu so that the user can choose to filter by number of horns.
+
+2. When the user chooses one of the options, the correct images should be displayed.
+
 </ul>
 
 **Notes:** 
