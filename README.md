@@ -10,8 +10,8 @@ https://priceless-mcnulty-beca3c.netlify.app/
 
 **Number and name of feature:** No Branch created   
 **Estimate of time needed to complete:** 2hours   
-**Start time:** n/a
-**Finish time:** n/a
+**Start time:** n/a   
+**Finish time:** n/a   
 **Actual time needed to complete:** 1 day 
 
 **Lab:**
@@ -47,12 +47,13 @@ React - https://reactjs.org/docs/getting-started.html
 ### Lab02
 
 **Number and name of feature:** feature 1    
-**Estimate of time needed to complete:**  2 hours
-**Start time:** n/a
-**Finish time:** n/a
+**Estimate of time needed to complete:**  2 hours  
+**Start time:** n/a   
+**Finish time:** n/a   
 **Actual time needed to complete:** 1 day
 
 **Lab:**
+
 <ul>
 
 1. Create new Branch feature#
@@ -64,6 +65,7 @@ React - https://reactjs.org/docs/getting-started.html
 4. The Main component should pass props for the title, image and description to each HornedBeast component
 
 5. Add button to select favorite
+
 6. Create state inside of the HornedBeast component that keeps track of the number of times an image was clicked
 
 7. Put a heart in each horned beast with the number of times it was “favorited” next to it.
@@ -73,6 +75,7 @@ React - https://reactjs.org/docs/getting-started.html
 9. When the user clicks on elements such as the header, footer or title of page, make something change using state.
 
 10. You can update the words, change the styles or add something new. Be creative
+
 </ul>
 
 **Notes:** 
@@ -89,10 +92,10 @@ React - https://reactjs.org/docs/getting-started.html
 
 
 **Number and name of feature:**   
-**Estimate of time needed to complete:**  
-**Start time:** 
-**Finish time:** 
-**Actual time needed to complete:** 
+**Estimate of time needed to complete:**     
+**Start time:**   
+**Finish time:**   
+**Actual time needed to complete:**   
 
 **Lab:**
 <ul>
@@ -124,10 +127,10 @@ React - https://reactjs.org/docs/getting-started.html
 
 
 **Number and name of feature:**   
-**Estimate of time needed to complete:**  
-**Start time:** 
-**Finish time:** 
-**Actual time needed to complete:** 
+**Estimate of time needed to complete:**     
+**Start time:**   
+**Finish time:**   
+**Actual time needed to complete:**   
 
 **Lab:**
 <ul>
@@ -151,12 +154,11 @@ React - https://reactjs.org/docs/getting-started.html
 
 ### Lab05
 
-
 **Number and name of feature:**   
-**Estimate of time needed to complete:**  
-**Start time:** 
-**Finish time:** 
-**Actual time needed to complete:** 
+**Estimate of time needed to complete:**     
+**Start time:**   
+**Finish time:**   
+**Actual time needed to complete:**   
 
 **Lab:**
 <ul>
@@ -182,10 +184,10 @@ React - https://reactjs.org/docs/getting-started.html
 
 
 **Number and name of feature:**   
-**Estimate of time needed to complete:**  
-**Start time:** 
-**Finish time:** 
-**Actual time needed to complete:** 
+**Estimate of time needed to complete:**     
+**Start time:**   
+**Finish time:**   
+**Actual time needed to complete:**   
 
 **Lab:**
 <ul>
