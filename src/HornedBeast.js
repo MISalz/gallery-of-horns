@@ -21,6 +21,9 @@ class HornedBeast extends React.Component {
       favorite: true
     })
   }
+  handleShowModal = () => {
+    this.props.openModal(this.props.image_url)
+  }
   render() {
     return (
       <article>
@@ -31,6 +34,7 @@ class HornedBeast extends React.Component {
           src={this.props.image_url}
           alt={this.props.title}
           description={this.props.description}
+          onClick={this.props.handleShowModal}
         />
         <p>{this.props.description}</p>
 
@@ -38,7 +42,7 @@ class HornedBeast extends React.Component {
 
         <Button 
         className="hb-button"
-        onClick={this.favorite}
+        onClick={this.handleLikes}
         >Favorite
         </Button>
 
