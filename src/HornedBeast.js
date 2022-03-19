@@ -38,11 +38,13 @@ class HornedBeast extends React.Component {
         />
         <p>{this.props.description}</p>
 
-        <div>{this.state.favorite ? 'I Love this Horn!':''}</div>
+        <div>{this.state.likes ? 'I Love this Horn!':''}</div>
+         
+      
 
         <Button 
         className="hb-button"
-        onClick={this.handleLikes}
+        onClick={this.favorite}
         >Favorite
         </Button>
 
