@@ -11,8 +11,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      img: {},
-      showModal: true
+      img: 'hi',
+      showModal: false
     }
   }
   hideModal = () => {
@@ -20,29 +20,27 @@ class App extends React.Component {
       showModal: false
     })
   }
-  openModal = () => {
+  openModal = (image_url) => {
     this.setState({
-      showModal: true
+      showModal: true,
+      img: image_url
     })
   }
-  handleShowModal = () => {
-    this.props.openModal(this.props.image_url)
-  }
+
   render() {
     return (
       <>
         <Header />
         <Main
           data={data}
-          showModal={this.props.showModal}
-          />
-        <Footer/>
-        <Modal>
-          show={this.handleShowModal}
-          onHide={this.props.hideModal}
-          {/* <Modal.Body>
-          openModal={this.props.openModal}
-          </Modal.Body> */}
+          openModal={this.openModal}
+        />
+        <Footer />
+        <Modal
+          show={this.state.showModal}
+          onHide={this.hideModal}
+        >
+          <Modal.Body>{this.state.img} </Modal.Body>
         </Modal>
       </>
     );
