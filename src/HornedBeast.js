@@ -27,7 +27,7 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
-      <article openonClick={this.handleShowModal}>
+      <article onClick={this.handleShowModal}>
         <h3>{this.props.title}</h3>
         <p>{this.state.likes}</p>
         <p onClick={this.handleLikes}>❤️</p>
@@ -35,7 +35,6 @@ class HornedBeast extends React.Component {
           src={this.props.image_url}
           alt={this.props.title}
           description={this.props.description}
-          data-target="moda1"
           />
           
         <p>{this.props.description}</p>
