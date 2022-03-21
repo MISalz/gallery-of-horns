@@ -21,10 +21,8 @@ class HornedBeast extends React.Component {
       favorite: true
     })
   }
-  handleShowModal = () => {
-    this.props.openModal(this.props.image_url)
-  }
-  render() {
+ 
+  render() { 
     return (
       <article>
         <h3>{this.props.title}</h3>
@@ -34,17 +32,11 @@ class HornedBeast extends React.Component {
           src={this.props.image_url}
           alt={this.props.title}
           description={this.props.description}
-          onClick={this.props.handleShowModal}
-        />
-        <p>{this.props.description}</p>
-
-        <div>{this.state.likes ? 'I Love this Horn!':''}</div>
-         
-      
-
-        <Button 
+          onClick={this.props.openModal}/>
+        <p>{this.props.description}</p>     
+         <Button 
         className="hb-button"
-        onClick={this.favorite}
+        onClick={this.handleLikes}
         >Favorite
         </Button>
 
