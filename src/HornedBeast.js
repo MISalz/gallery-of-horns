@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import './HornedBeast.css';
@@ -22,31 +21,26 @@ class HornedBeast extends React.Component {
     })
   }
   handleShowModal = () => {
-   this.props.openModal(this.props.image_url)
-    }
-
+    this.props.openModal(this.props.beast.title)
+  }
   render() {
     return (
       <article >
         <div onClick={this.handleShowModal}>
-        <h3>{this.props.title}</h3>
-        <p>{this.state.likes}</p>
-        <p onClick={this.handleLikes}>❤️</p>
-        <img
-          src={this.props.image_url}
-          alt={this.props.title}
-          description={this.props.description}
+          <h3>{this.props.title}</h3>
+          <p>{this.state.likes}</p>
+          <p onClick={this.handleLikes}>❤️</p>
+          <img
+            alt={this.props.title}
+            src={this.props.image_url}
           />
-          
-        <p>{this.props.description}</p>
-          </div>
-          
+          <p>{this.props.description}</p>
+        </div>
         <Button
           className="hb-button"
           onClick={this.handleLikes}
         >Favorite
         </Button>
-
       </article>
     );
   }
