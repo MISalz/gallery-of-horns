@@ -21,7 +21,7 @@ class HornedBeast extends React.Component {
     })
   }
   handleShowModal = () => {
-    this.props.openModal(this.props.beast.title)
+    this.props.openModal(this.props.title)
   }
   render() {
     return (

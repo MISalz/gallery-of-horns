@@ -15,35 +15,39 @@ class App extends React.Component {
     this.state = {
       showModal: false,
       beast: {},
-      allBeast: data,
+      allBeast: data
     }
   }
+
   hideModal = () => {
     this.setState({
       showModal: false
     })
   }
-  openModal = (beastName) => {
-    let beast = data.find((object)=>{return object.title=beastName});
+
+  openModal = (title) => {
+    let pickedbeast = data.find(beast => beast.title === title)
     this.setState({
       showModal: true,
-      beast,
+      SelectedBeast: pickedbeast
     })
+    console.log(this.state.selectedBeast);
   }
+
   handleSelect = (e) => {
     let option = parseInt(e.target.value)
     console.log(e.target.value)
     let horns = data.filter(hornPick => hornPick.horns === option);
     console.log(horns);
-    this.setState({listBeast: horns});   
-
+    this.setState({ listBeast: horns });
   };
+  
   render() {
     return (
       <>
         <Header />
         <form name="selected" onChange={(this.handleSelect)}>
-        <Form.Select name="option" onChange={(this.handleSelect)}>
+          <Form.Select name="option" onChange={(this.handleSelect)}>
             <option>Choose number of Horns</option>
             <option value="1">One Horn</option>
             <option value="2">Two Horns</option>
@@ -69,4 +73,5 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;
