@@ -25,14 +25,22 @@ class App extends React.Component {
     })
   }
 
-  openModal = (title) => {
-    let pickedbeast = data.find(beast => beast.title === title)
+  // openModal = (title) => {
+  //   let pickedbeast = data.find(beast => beast.title === title)
+  //   this.setState({
+  //     showModal: true,
+  //     SelectedBeast: pickedbeast
+  //   })
+  //   console.log(this.state.SelectedBeast);
+  // }
+
+  openModal = (beast) => {
     this.setState({
       showModal: true,
-      SelectedBeast: pickedbeast
+      beast,
     })
-    console.log(this.state.selectedBeast);
   }
+
 
   handleSelect = (e) => {
     let option = parseInt(e.target.value)
@@ -41,7 +49,7 @@ class App extends React.Component {
     console.log(horns);
     this.setState({ listBeast: horns });
   };
-  
+
   render() {
     return (
       <>
@@ -63,7 +71,7 @@ class App extends React.Component {
           showModal={this.state.showModal}
         />
         <SelectedBeast
-          theBeast={this.state.selectedBeast}
+          beast={this.state.beast}
           showModal={this.state.showModal}
           hideModal={this.hideModal}
         />
