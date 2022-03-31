@@ -13,9 +13,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false,
       beast: {},
-      allBeast: data
+      showModal: false,
+      listBeast: data
     }
   }
 
@@ -25,22 +25,12 @@ class App extends React.Component {
     })
   }
 
-  // openModal = (title) => {
-  //   let pickedbeast = data.find(beast => beast.title === title)
-  //   this.setState({
-  //     showModal: true,
-  //     SelectedBeast: pickedbeast
-  //   })
-  //   console.log(this.state.SelectedBeast);
-  // }
-
   openModal = (beast) => {
     this.setState({
       showModal: true,
-      beast,
+      beast
     })
   }
-
 
   handleSelect = (e) => {
     let option = parseInt(e.target.value)
@@ -54,7 +44,8 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <form name="selected" onChange={(this.handleSelect)}>
+        <form>
+
           <Form.Select name="option" onChange={(this.handleSelect)}>
             <option>Choose number of Horns</option>
             <option value="1">One Horn</option>
@@ -64,11 +55,8 @@ class App extends React.Component {
           </Form.Select>
         </form>
         <Main
-          data={data}
+          data={this.state.listBeast}
           openModal={this.openModal}
-          hideModal={this.hideModal}
-          allBeast={this.state.allBeast}
-          showModal={this.state.showModal}
         />
         <SelectedBeast
           beast={this.state.beast}

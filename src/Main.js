@@ -5,17 +5,13 @@ import './Main.css';
 
 class Main extends React.Component {
   render() {
-    let hb = this.props.allBeast.map((beast, index) => {
-      return(
+    let hb = this.props.data.map((beast, index) => {
+      return (
         <HornedBeast
-          image_url={beast.image_url}
-          title={beast.title}
-          description={beast.description}
           key={index}
+          beast={beast}
           openModal={this.props.openModal}
-          hideModal={this.props.hideModal}
-          showModal={this.props.showModal}
-          />
+        />
       )
     })
     return (

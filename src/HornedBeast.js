@@ -18,21 +18,22 @@ class HornedBeast extends React.Component {
   favorite = () => {
     this.setState({
       favorite: true
+      
     })
+    this.props.openModal(this.props.beast)
   }
-  handleShowModal = () => {
-    this.props.openModal(this.props.title)
-  }
+  
+
   render() {
     return (
       <article >
-        <div onClick={this.handleShowModal}>
+        <div >
           <h3>{this.props.title}</h3>
           <p>{this.state.likes}</p>
           <p onClick={this.handleLikes}>❤️</p>
-          <img
-            alt={this.props.title}
-            src={this.props.image_url}
+          <img onClick={this.favorite}
+            alt={this.props.beast.title}
+            src={this.props.beast.image_url}
           />
           <p>{this.props.description}</p>
         </div>
